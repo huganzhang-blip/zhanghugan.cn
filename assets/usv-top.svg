@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 200" role="img" aria-label="无人艇俯视图">
+  <defs>
+    <linearGradient id="hull" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7ffff"/>
+      <stop offset="1" stop-color="#77d9d5"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-20%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="7" stdDeviation="6" flood-color="#006b78" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <path d="M60 5C82 27 97 54 101 91L93 164 76 190H44l-17-26-8-73C23 54 38 27 60 5Z" fill="url(#hull)" stroke="#006b78" stroke-width="6"/>
+    <path d="M60 23v145" stroke="#006b78" stroke-width="4" opacity=".55"/>
+    <rect x="39" y="70" width="42" height="55" rx="12" fill="#102333"/>
+    <rect x="45" y="78" width="30" height="24" rx="7" fill="#dff9f7"/>
+    <path d="M24 119 7 154l23-9M96 119l17 35-23-9" fill="#55d5d0" stroke="#006b78" stroke-width="5" stroke-linejoin="round"/>
+    <circle cx="60" cy="115" r="7" fill="#55d5d0"/>
+  </g>
+</svg>
