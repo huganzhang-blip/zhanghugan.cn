@@ -1,3 +1,11 @@
 .showcase-item {
   margin-top: 32px;
 }
+
+.inner > .featured:first-of-type {
+  margin-top: 28px;
+}
+
+.inner > .show-grid {
+  margin-top: 24px;
+}
