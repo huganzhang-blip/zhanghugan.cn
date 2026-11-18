@@ -9,3 +9,25 @@
 .inner > .show-grid {
   margin-top: 24px;
 }
+
+.speed-control {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  margin-top:22px;
+  padding-top:16px;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:13px;
+}
+
+.speed-control select {
+  min-width:88px;
+  padding:7px 10px;
+  border:1px solid var(--line);
+  border-radius:2px;
+  background:#fff;
+  color:var(--navy);
+  font:600 13px "Microsoft YaHei",sans-serif;
+}

@@ -1,0 +1,7 @@
+.patent-block { scroll-margin-top:100px; padding:42px; }
+.patent-block > h2 { margin:0 0 30px; font:32px Georgia,"Noto Serif SC",serif; }
+.patent-year + .patent-year { margin-top:42px; }
+.patent-year > h3 { display:flex; align-items:baseline; gap:12px; margin:0; padding-bottom:8px; border-bottom:2px solid var(--navy); color:var(--navy); font:30px Georgia,serif; }
+.patent-year > h3 small { color:var(--blue); font:12px "Microsoft YaHei",sans-serif; }
+.patent-list article { background:transparent; }
+@media (max-width:560px) { .patent-block { padding:26px 20px; } }
