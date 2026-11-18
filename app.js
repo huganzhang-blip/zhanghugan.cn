@@ -1,2 +1,3 @@
+const brandStyles=document.createElement('link');brandStyles.rel='stylesheet';brandStyles.href='brand.css';document.head.appendChild(brandStyles);
 const menu=document.querySelector('.menu'),nav=document.querySelector('.header nav');menu?.addEventListener('click',()=>nav.classList.toggle('open'));nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
 const filterButtons=document.querySelectorAll('.filter button'),items=document.querySelectorAll('.pub-list article');filterButtons.forEach(button=>button.addEventListener('click',()=>{filterButtons.forEach(b=>b.classList.remove('selected'));button.classList.add('selected');const kind=button.textContent;items.forEach(item=>item.hidden=kind!=='全部'&&item.dataset.kind!==kind)}));
