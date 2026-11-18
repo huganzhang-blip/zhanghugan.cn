@@ -1,0 +1,16 @@
+.paper-list cite a {
+  color: var(--navy);
+  border-bottom: 1px solid var(--blue);
+}
+
+.esi-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #fff0d7;
+  color: #a75a00;
+  font: 700 11px "Microsoft YaHei", sans-serif;
+  vertical-align: middle;
+  white-space: nowrap;
+}
