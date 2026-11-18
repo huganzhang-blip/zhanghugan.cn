@@ -1,4 +1,11 @@
+.team-lead {
+  grid-template-columns: 150px 1fr;
+  gap: 32px;
+}
+
 .team-lead .portrait {
+  width: 150px;
+  height: 150px;
   display: block;
   object-fit: cover;
   object-position: center 30%;
@@ -15,4 +22,15 @@
 .team-lead .email a,
 .contact a {
   border-bottom: 1px solid rgba(29, 113, 139, 0.35);
+}
+
+@media (max-width: 560px) {
+  .team-lead {
+    grid-template-columns: 1fr;
+  }
+
+  .team-lead .portrait {
+    width: 110px;
+    height: 110px;
+  }
 }
