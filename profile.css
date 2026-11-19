@@ -70,6 +70,55 @@
   font-size: 14px;
 }
 
+.contact-panel {
+  display: block;
+  padding: 42px;
+  background: var(--soft);
+}
+
+.contact-copy {
+  max-width: 860px;
+}
+
+.contact-copy h2 {
+  margin: 0 0 26px;
+  color: var(--navy);
+  font: 34px Georgia, "Noto Serif SC", serif;
+}
+
+.contact-copy dl {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px 32px;
+  margin: 0;
+}
+
+.contact-copy dl > div {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  white-space: nowrap;
+}
+
+.contact-copy dt {
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.contact-copy dd {
+  margin: 0;
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.contact-invite {
+  margin: 26px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
 @media (max-width: 560px) {
   .team-lead {
     grid-template-columns: 1fr;
@@ -88,5 +137,9 @@
     padding-left: 0;
     border-left: 0;
     border-top: 1px solid var(--line);
+  }
+
+  .contact-panel {
+    padding: 26px 20px;
   }
 }
