@@ -4,17 +4,24 @@
 <header class="header"><a class="brand" href="index.html"><img src="assets/smu-logo.png" alt="上海海事大学"><b>海洋智能无人系统研究</b></a><button class="menu" aria-label="打开导航">☰</button><nav><a class="active" href="index.html">首页</a><a href="publications.html">成果分享</a><a href="showcase.html">成果展示</a><a href="team.html">团队介绍</a></nav></header>
 <main class="home-page">
   <section class="home-hero">
-    <div class="hero-copy"><p class="home-eyebrow">MARINE INTELLIGENCE · AUTONOMOUS CONTROL</p><h1>面向海洋智能无人系统的<br><em>路径规划、协同与博弈控制</em></h1><p>围绕复杂海洋环境中的感知不完备、通信不可靠、任务强对抗与系统强耦合问题，研究无人艇及异构海洋航行器的自主决策、安全协同和韧性控制方法。</p><div class="hero-actions"><a href="showcase.html">成果展示</a><a class="ghost" href="publications.html">学术成果</a></div><ul class="hero-tags"><li>韧性控制</li><li>协同导航</li><li>博弈决策</li><li>智能学习</li></ul></div>
+    <div class="hero-copy"><p class="home-eyebrow">MARINE INTELLIGENCE · AUTONOMOUS CONTROL</p><h1>面向海洋智能无人系统的<br><em>路径规划、协同与博弈控制</em></h1><p>研究复杂海洋环境下无人艇及异构航行器的自主决策、安全协同与韧性控制。</p><div class="hero-actions"><a href="showcase.html">成果展示</a><a class="ghost" href="publications.html">学术成果</a></div><ul class="hero-tags"><li>韧性控制</li><li>协同导航</li><li>博弈决策</li><li>智能学习</li></ul></div>
     <div class="system-map radar-map" aria-label="无人艇集群动态雷达探测示意图"><div class="radar-grid"></div><div class="radar-sweep"></div><i class="radar-pulse pulse-one"></i><i class="radar-pulse pulse-two"></i><i class="radar-pulse pulse-three"></i><div class="center-usv"><img src="assets/usv-top.svg" alt="中心无人艇"></div><img class="radar-usv boat-one" src="assets/usv-top.svg" alt="协同无人艇一"><img class="radar-usv boat-two" src="assets/usv-top.svg" alt="协同无人艇二"><img class="radar-usv boat-three" src="assets/usv-top.svg" alt="协同无人艇三"><img class="radar-usv boat-four" src="assets/usv-top.svg" alt="协同无人艇四"></div>
+  </section>
+
+  <section class="capability-band" aria-label="研究体系概览">
+    <article><span>任务场景</span><strong>通信受限 · 网络攻击 · 复杂海况</strong></article>
+    <article><span>对象平台</span><strong>USV · UAV · AUV</strong></article>
+    <article><span>方法体系</span><strong>规划 · 博弈 · 学习 · 控制</strong></article>
+    <article><span>验证链路</span><strong>MATLAB · ROS 2 · 实船</strong></article>
   </section>
 
   <section class="research-focus">
     <header class="section-heading"><div><p>RESEARCH DIRECTIONS</p><h2>主要研究方向</h2></div><p>立足海洋任务需求牵引，打通基础理论、控制方法、智能算法到实船验证的全链路，脚踏实地、做力所能及的前沿探索，以科研实战育人，培养海洋智能机器人领域高素质创新人才。</p></header>
     <div class="direction-grid">
-      <article><span>01</span><h3>网络攻击与通信受限下无人艇集群路径规划与控制</h3><p>面向带宽受限、时延、丢包、间歇通信及DoS攻击等网络环境，研究攻击检测与状态重构、通信感知协同导航、集群安全避碰和韧性队形保持方法，提升无人艇集群在信息不完整条件下的任务持续能力。</p><ul><li>通信攻击建模与检测</li><li>事件触发协同与信息预测</li><li>安全约束与韧性恢复控制</li></ul></article>
-      <article><span>02</span><h3>同构／异构海洋航行器协同与博弈理论</h3><p>研究多无人艇以及无人艇—无人机—水下航行器跨域系统的协同机理，刻画平台动力学差异、感知范围和任务能力约束，构建面向围捕、防御、护航与协同探测任务的分布式博弈决策方法。</p><ul><li>跨域协同建模与任务分配</li><li>追逃、围捕与目标防御博弈</li><li>多智能体协同稳定性分析</li></ul></article>
-      <article><span>03</span><h3>复杂海况下智能船舶自主航行与安全控制</h3><p>针对海流、风浪、模型不确定性、执行器约束及动态障碍物影响，研究船舶运动建模、路径规划、制导与轨迹跟踪控制方法，实现复杂海况下兼顾精度、稳定性和航行安全的自主控制。</p><ul><li>抗扰制导与运动控制</li><li>状态及输入约束处理</li><li>自主避碰与安全航行</li></ul></article>
-      <article><span>04</span><h3>模型与数据融合的海洋智能决策控制</h3><p>融合机理模型、群集行为先验与强化学习，研究具有可解释性和安全保证的智能控制结构，通过状态预测、残差学习和攻防交替训练，提高系统对未知环境、动态目标及未见任务的适应能力。</p><ul><li>安全强化学习与残差控制</li><li>目标状态预测与在线适应</li><li>数字仿真到实船迁移验证</li></ul></article>
+      <article><span>01</span><h3>网络攻击与通信受限下无人艇集群路径规划与控制</h3><p>研究通信不可靠条件下的攻击检测、协同规划、安全避碰与韧性控制。</p><ul><li>通信攻击检测</li><li>韧性协同控制</li></ul></article>
+      <article><span>02</span><h3>同构／异构海洋航行器协同与博弈理论</h3><p>面向围捕、防御与协同探测任务，研究跨域航行器的分布式协同与博弈决策。</p><ul><li>跨域协同</li><li>追逃博弈</li></ul></article>
+      <article><span>03</span><h3>复杂海况下智能船舶自主航行与安全控制</h3><p>研究风浪流扰动与系统约束下的路径规划、运动控制和自主避碰。</p><ul><li>抗扰控制</li><li>安全航行</li></ul></article>
+      <article><span>04</span><h3>模型与数据融合的海洋智能决策控制</h3><p>融合机理模型与强化学习，提升系统在未知环境和动态任务中的适应能力。</p><ul><li>安全强化学习</li><li>在线适应</li></ul></article>
     </div>
   </section>
 

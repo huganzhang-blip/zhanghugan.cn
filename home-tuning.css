@@ -1,6 +1,111 @@
+.home-page {
+  --navy: #0b2d45;
+  --blue: #08738a;
+  --cyan: #27b3a6;
+  --ink: #203746;
+  --muted: #607581;
+  --line: #d6e2e5;
+  --soft: #f1f6f7;
+  background: #f7fafb;
+}
+
+.home-hero {
+  position: relative;
+  isolation: isolate;
+  background: linear-gradient(135deg,#f5fafb 0%,#e4f0f2 58%,#cfe3e7 100%);
+}
+
+.home-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  opacity: .42;
+  background-image:
+    linear-gradient(rgba(8,115,138,.085) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(8,115,138,.085) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(90deg, transparent, #000 18%, #000 82%, transparent);
+}
+
+.home-hero::after {
+  content: "";
+  position: absolute;
+  right: 6%;
+  top: 8%;
+  z-index: -1;
+  width: 42vw;
+  height: 42vw;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(39,179,166,.24), transparent 68%);
+  filter: blur(14px);
+}
+
+.hero-copy,
+.radar-map {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-copy > p:not(.home-eyebrow) {
+  color: #435f6d;
+}
+
+.hero-tags li {
+  border-color: rgba(8,115,138,.28);
+  background: rgba(255,255,255,.48);
+  color: #315c6a;
+}
+
+.capability-band {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0,1fr));
+  margin: -38px max(5vw,24px) 0;
+  border-top: 3px solid var(--cyan);
+  background: linear-gradient(135deg,#0a2d45 0%,#123e53 100%);
+  box-shadow: 0 22px 58px rgba(7,38,58,.24);
+}
+
+.capability-band article {
+  min-height: 126px;
+  padding: 25px 27px 23px;
+}
+
+.capability-band article + article {
+  border-left: 1px solid rgba(255,255,255,.14);
+}
+
+.capability-band span {
+  display: block;
+  margin-bottom: 13px;
+  color: #57d2c7;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+
+.capability-band strong {
+  display: block;
+  color: #fff;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.capability-band p {
+  margin: 10px 0 0;
+  color: #bdced5;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
 .research-focus {
-  padding-top: 72px;
+  padding-top: 92px;
   padding-bottom: 88px;
+  background:
+    radial-gradient(circle at 92% 18%, rgba(39,179,166,.12), transparent 22%),
+    #f7fafb;
 }
 
 .section-heading {
@@ -25,13 +130,78 @@
   max-width: none;
   margin: 0;
   padding: 3px 0 3px 28px;
-  border-left: 1px solid #bfd1d6;
-  color: #526773;
+  border-left: 1px solid #b9cdd2;
+  color: #4d6672;
   font-size: 16px;
   line-height: 2;
 }
 
+.direction-grid {
+  gap: 18px;
+  border: 0;
+  background: transparent;
+}
+
+.direction-grid article {
+  min-height: 320px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: linear-gradient(145deg,#fff 0%,#fff 70%,#edf5f5 100%);
+  box-shadow: 0 12px 30px rgba(11,45,69,.07);
+}
+
+.direction-grid article::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg,var(--blue),var(--cyan));
+}
+
+.direction-grid article > span {
+  display: inline-grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border-radius: 50%;
+  background: #dff2f0;
+  color: var(--blue);
+  font-size: 13px;
+}
+
+.direction-grid article:hover {
+  border-color: #9bc9cd;
+  background: linear-gradient(145deg,#fff,#e8f4f3);
+  box-shadow: 0 20px 45px rgba(11,45,69,.13);
+}
+
+.direction-grid li {
+  margin-right: 7px;
+  padding: 5px 10px;
+  border-radius: 99px;
+  background: #e0f2f0;
+  color: #086f7e;
+  font-size: 13px;
+}
+
 @media (max-width: 960px) {
+  .capability-band {
+    grid-template-columns: repeat(2,1fr);
+    margin-top: -26px;
+  }
+
+  .capability-band article:nth-child(3) {
+    border-left: 0;
+    border-top: 1px solid rgba(255,255,255,.14);
+  }
+
+  .capability-band article:nth-child(4) {
+    border-top: 1px solid rgba(255,255,255,.14);
+  }
+
   .section-heading {
     grid-template-columns: 1fr;
     gap: 25px;
@@ -45,8 +215,27 @@
 }
 
 @media (max-width: 600px) {
+  .home-hero::before {
+    background-size: 32px 32px;
+  }
+
+  .capability-band {
+    grid-template-columns: 1fr;
+    margin: -18px 20px 0;
+  }
+
+  .capability-band article {
+    min-height: auto;
+    padding: 21px 22px;
+  }
+
+  .capability-band article + article {
+    border-left: 0;
+    border-top: 1px solid rgba(255,255,255,.14);
+  }
+
   .research-focus {
-    padding-top: 52px;
+    padding-top: 66px;
     padding-bottom: 60px;
   }
 
@@ -61,4 +250,3 @@
     line-height: 1.9;
   }
 }
-

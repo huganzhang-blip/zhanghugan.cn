@@ -119,6 +119,25 @@
   font-size: 14px;
 }
 
+.contact-recruit {
+  margin: 20px 0 0;
+  padding: 16px 18px;
+  border-left: 3px solid var(--blue);
+  background: #e9f3f4;
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.contact-recruit span {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+
 @media (max-width: 560px) {
   .team-lead {
     grid-template-columns: 1fr;

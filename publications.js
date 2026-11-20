@@ -4,3 +4,30 @@ document.querySelectorAll('.paper-list article > p').forEach((authors) => {
     .replaceAll('Zhang, H. G.', '<strong>Zhang, H. G.</strong>')
     .replaceAll('章沪淦', '<strong>章沪淦</strong>');
 });
+
+const journalImpactFactors = [
+  ['IEEE Transactions on Vehicular Technology', '7.5', '中科院2区'],
+  ['IEEE Transactions on Systems, Man, and Cybernetics: Systems', '8.4', '中科院1区 TOP'],
+  ['Journal of Marine Science and Engineering', '3.2', '中科院3区'],
+  ['Proceedings of the Institution of Mechanical Engineers, Part M', '1.8', '中科院4区'],
+  ['Ships and Offshore Structures', '1.7', '中科院4区'],
+  ['Asian Journal of Control', '2.0', '中科院小区3区'],
+  ['ISA Transactions', '6.6', '中科院小区1区 TOP'],
+  ['Ocean Engineering', '6.3', '中科院2区 TOP'],
+];
+
+document.querySelectorAll('.year-group .paper-list cite').forEach((journal) => {
+  const match = journalImpactFactors.find(([name]) => journal.textContent.includes(name));
+  if (!match) return;
+
+  const zoneBadge = document.createElement('span');
+  zoneBadge.className = 'cas-badge';
+  zoneBadge.textContent = match[2];
+  zoneBadge.title = `2025年中科院期刊分区表升级版：${match[2]}`;
+
+  const badge = document.createElement('span');
+  badge.className = 'if-badge';
+  badge.textContent = `IF: ${match[1]}`;
+  badge.title = `2025 Journal Impact Factor：${match[1]}`;
+  journal.closest('article').querySelector('h3').append(zoneBadge, badge);
+});
