@@ -5,5 +5,5 @@
 .top-badge{border:1px solid #6e3df0;background:#6e3df0;color:#fff}
 .jcr-badge{border:1px solid #31936f;background:#31936f;color:#fff}
 .if-badge{border:1px solid #a8e3cb;background:#f3fff9;color:#155e4b;font-family:Consolas,"Courier New",monospace;letter-spacing:.03em;box-shadow:none}
-.excellence-badge{display:inline-block;margin-left:9px;padding:2px 7px;border:1px solid #d5b35f;border-radius:999px;background:#fff7dc;color:#8a6818;font:700 11px/1.35 "Microsoft YaHei",sans-serif;vertical-align:2px;white-space:nowrap}
+.excellence-badge{display:inline-block;margin-left:9px;padding:2px 7px;border:1px solid #d5b35f;border-radius:999px;background:#fff7dc;color:#8a6818;font:700 12px/1.35 "Microsoft YaHei",sans-serif;vertical-align:2px;white-space:nowrap}
 @media(max-width:560px){.if-badge,.cas-badge,.top-badge,.jcr-badge{margin:5px 5px 0 0;padding:3px 7px;font-size:11px}}
