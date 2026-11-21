@@ -13,6 +13,10 @@
   box-shadow: 0 14px 34px rgba(18, 43, 63, 0.18);
 }
 
+.team-lead h2 {
+  font-size: 27px;
+}
+
 .team-lead .email,
 .team-lead .email a,
 .contact a {
@@ -67,7 +71,7 @@
   padding: 7px 14px;
   background: var(--soft);
   color: var(--ink);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .contact-panel {
