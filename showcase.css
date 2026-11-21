@@ -10,16 +10,37 @@
   margin-top: 24px;
 }
 
+/* Keep the media and its description balanced so long paper titles do not
+   create a large empty area beneath the video. */
+.inner > .featured {
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  align-items:start;
+}
+
+.inner > .featured > div {
+  padding:24px 28px;
+}
+
+.inner > .featured p {
+  margin-bottom:0;
+  font-size:15px;
+  line-height:1.8;
+}
+
 .speed-control {
   display:flex;
   align-items:center;
   justify-content:space-between;
   gap:14px;
-  margin-top:22px;
-  padding-top:16px;
+  margin-top:16px;
+  padding-top:12px;
   border-top:1px solid var(--line);
   color:var(--muted);
   font-size:13px;
+}
+
+@media(max-width:850px){
+  .inner > .featured{grid-template-columns:1fr}
 }
 
 .speed-control select {
