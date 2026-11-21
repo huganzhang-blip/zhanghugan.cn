@@ -72,6 +72,7 @@
   background: var(--soft);
   color: var(--ink);
   font-size: 16px;
+  font-weight: 700;
 }
 
 .contact-panel {
