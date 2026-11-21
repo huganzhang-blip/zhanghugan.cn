@@ -13,8 +13,18 @@
 /* Keep the media and its description balanced so long paper titles do not
    create a large empty area beneath the video. */
 .inner > .featured {
-  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  grid-template-columns:minmax(0,3fr) minmax(300px,2fr);
   align-items:start;
+}
+
+.video-frame {
+  position:relative;
+  min-width:0;
+  background:#07131b;
+}
+
+.video-frame video {
+  display:block;
 }
 
 .inner > .featured > div {
@@ -28,15 +38,22 @@
 }
 
 .speed-control {
+  position:absolute;
+  top:12px;
+  right:12px;
+  z-index:2;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:14px;
-  margin-top:16px;
-  padding-top:12px;
-  border-top:1px solid var(--line);
-  color:var(--muted);
-  font-size:13px;
+  gap:8px;
+  margin:0;
+  padding:6px 8px;
+  border:1px solid rgba(255,255,255,.28);
+  border-radius:4px;
+  background:rgba(7,19,27,.78);
+  color:#fff;
+  font-size:12px;
+  backdrop-filter:blur(5px);
 }
 
 @media(max-width:850px){
@@ -44,11 +61,11 @@
 }
 
 .speed-control select {
-  min-width:88px;
-  padding:7px 10px;
-  border:1px solid var(--line);
+  min-width:72px;
+  padding:4px 7px;
+  border:1px solid rgba(255,255,255,.4);
   border-radius:2px;
   background:#fff;
   color:var(--navy);
-  font:600 13px "Microsoft YaHei",sans-serif;
+  font:600 12px "Microsoft YaHei",sans-serif;
 }
