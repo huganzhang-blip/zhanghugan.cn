@@ -10,24 +10,23 @@
   margin-top: 24px;
 }
 
-/* Keep the media and its description balanced so long paper titles do not
-   create a large empty area beneath the video. */
+/* Full-width video with its caption placed underneath. */
 .inner > .featured {
-  grid-template-columns:minmax(0,3fr) minmax(300px,2fr);
-  align-items:start;
+  grid-template-columns:1fr;
 }
 
 .inner > .featured > div {
-  padding:24px 28px;
+  padding:30px 42px 34px;
 }
 
 .inner > .featured p {
-  margin-bottom:0;
-  font-size:15px;
-  line-height:1.8;
+  margin:18px 0 0;
+  font-size:16px;
+  line-height:1.9;
 }
 
 @media(max-width:850px){
-  .inner > .featured{grid-template-columns:1fr}
+  .inner > .featured > div{padding:24px 22px 28px}
+  .inner > .featured p{font-size:15px}
 }
 
