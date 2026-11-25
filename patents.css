@@ -4,4 +4,5 @@
 .patent-year > h3 { display:flex; align-items:baseline; gap:12px; margin:0; padding-bottom:8px; border-bottom:2px solid var(--navy); color:var(--navy); font:30px Georgia,serif; }
 .patent-year > h3 small { color:var(--blue); font:12px "Microsoft YaHei",sans-serif; }
 .patent-list article { background:transparent; }
+.transfer-badge { display:inline-block; margin-left:10px; padding:2px 8px; border:1px solid #d4a64a; border-radius:999px; background:#fff7df; color:#8a6010; font:700 12px/1.45 "Microsoft YaHei",sans-serif; vertical-align:1px; white-space:nowrap; }
 @media (max-width:560px) { .patent-block { padding:26px 20px; } }
