@@ -17,6 +17,17 @@
   font-size: 27px;
 }
 
+.team-role {
+  display:inline-block;
+  margin:6px 0 10px !important;
+  padding:3px 10px;
+  border-radius:999px;
+  background:#e8f3f5;
+  color:var(--blue) !important;
+  font-size:13px;
+  font-weight:700;
+}
+
 .team-lead .email,
 .team-lead .email a,
 .contact a {
@@ -30,6 +41,47 @@
 
 .team-members {
   margin-bottom: 70px;
+}
+
+.team-participants {
+  margin-bottom:70px;
+}
+
+.participant-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:24px;
+  border-top:2px solid var(--navy);
+  padding-top:26px;
+}
+
+.participant-grid article {
+  display:grid;
+  grid-template-columns:120px 1fr;
+  gap:24px;
+  align-items:center;
+  padding:20px;
+  border:1px solid var(--line);
+  background:#fff;
+}
+
+.participant-grid img {
+  width:120px;
+  height:150px;
+  object-fit:cover;
+  object-position:center top;
+}
+
+.participant-grid h3 {
+  margin:0 0 7px;
+  color:var(--navy);
+  font-size:22px;
+}
+
+.participant-grid p {
+  margin:0;
+  color:var(--blue);
+  font-size:14px;
 }
 
 .member-cohorts {
@@ -155,6 +207,21 @@
 
   .member-cohorts {
     grid-template-columns: 1fr;
+  }
+
+  .participant-grid {
+    grid-template-columns:1fr;
+  }
+
+  .participant-grid article {
+    grid-template-columns:96px 1fr;
+    gap:18px;
+    padding:16px;
+  }
+
+  .participant-grid img {
+    width:96px;
+    height:120px;
   }
 
   .member-cohorts article + article {
